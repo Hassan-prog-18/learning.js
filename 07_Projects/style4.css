@@ -1,0 +1,21 @@
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     /* gap: 40px; */
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#guess{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+gap: 20px;
+}
