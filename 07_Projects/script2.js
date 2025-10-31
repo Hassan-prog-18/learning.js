@@ -16,15 +16,14 @@ form.addEventListener('submit', function(e){
         }else{
             let bmi = (weight / ((height * height) / 10000)).toFixed(2);
             // show the result
-            results.innerHTML = `<span>${bmi}</span>`;
-        }
-       
-        if (weight < 18.6) {
-            guide.innerHTML = `Under Weight ${results.innerHTML}`;
-        }else if (weight >= 18.6 && weight <= 24.9) {
-            guide.innerHTML = `Normal Range ${results.innerHTML}`;
-        }else{
-            guide.innerHTML = `Over Weight ${results.innerHTML}`;
+             results.innerHTML = `<span>${bmi}</span>`;
 
+        if (bmi < 18.6) {
+            guide.innerHTML = `Under Weight (BMI: ${bmi})`;
+        } else if (bmi >= 18.6 && bmi <= 24.9) {
+            guide.innerHTML = `Normal Range (BMI: ${bmi})`;
+        } else {
+            guide.innerHTML = `Over Weight (BMI: ${bmi})`;
         }
+    }
 })
